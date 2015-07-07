@@ -1,11 +1,64 @@
-/* Use the class tags to select html nodes and apply styles to them. */
+/* Palette:
+ * 0008B2 - dark blue
+ * 1924FF - light blue
+ * 000BFF - blue
+ * B28F00 - dark yellow
+ * FFCC00 - yellow
+ */
 
-/* This increases the size of the title/heading, in this case "MathWhiz" */
+/* otherwise <body> adds 8px of margin on all sides */
+body {
+	margin: 0px 8px 8px 0px;
+}
+
+.screen__header {
+	display: block;
+	position: fixed;
+	width: auto;
+	left: 0em;
+	right: 0em;
+	padding: 0em 1.5em 0em 1.5em;
+	background-color: #000BFF;
+}
+
 .nav-bar__title {
-  font-size: 10em;
+	display: block;
+	margin: auto;
+	font-family: Open Sans;
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow: 0.06em 0.04em 0 black;
+	letter-spacing: 0.04em;
+	word-spacing: -0.12em;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFCC00;
+}
+
+.icon-button {
+	display: inline-block;
+	position: absolute;
+	width: 2.8em;
+	height: 2.8em;
+	top: 0em;
+	bottom: 0em;
+	margin: auto;
+}
+.icon-button.left {
+	left: 1.2em;
+}
+.icon-button.right {
+	right: 1.2em;
 }
 
 /* For example, this makes the checkmark indicating that the answer is correct green. */
 .question__options__option__correctness--correct {
   fill: green;
+}
+
+/* Footer */
+.screen__footer {
+	position: fixed;
+	bottom: 0.05em;
+	width: 100%;
 }
