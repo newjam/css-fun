@@ -96,10 +96,13 @@
 	display: inline-block;
 }
 
-.question__options__option__correctness--correct {
+.question__options__option__correctness {
 	position: relative;
-	top: -0.4em;
-	left: -0.4em;
+	width: 1em;
+	margin: auto;
+	padding: auto;
+	top: 0em;
+	left: -0.5em;
 	fill: green;
 }
 .question__options__option__text {
