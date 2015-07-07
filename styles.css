@@ -1,0 +1,11 @@
+/* Use the class tags to select html nodes and apply styles to them. */
+
+/* This increases the size of the title/heading, in this case "MathWhiz" */
+.nav-bar__title {
+  font-size: 10em;
+}
+
+/* For example, this makes the checkmark indicating that the answer is correct green. */
+.question__options__option__correctness--correct {
+  fill: green;
+}
