@@ -8,7 +8,7 @@
 
 /* otherwise <body> adds 8px of margin on all sides */
 body {
-	margin: 0px 8px 8px 0px;
+	margin: 0px 8px 0px 8px;
 }
 
 .screen__header {
@@ -19,6 +19,7 @@ body {
 	right: 0em;
 	padding: 0em 1.5em 0em 1.5em;
 	background-color: #000BFF;
+	border-bottom: 0.4em solid #0008B2;
 }
 
 .nav-bar__title {
@@ -38,17 +39,37 @@ body {
 .icon-button {
 	display: inline-block;
 	position: absolute;
-	width: 2.8em;
-	height: 2.8em;
-	top: 0em;
+	width: 3.4em;
+	height: 3.4em;
+	top: 0.25em;
 	bottom: 0em;
 	margin: auto;
+	
+	border: none;
+	background-color: #FFCC00;
+	-moz-border-radius: 0.6em;
+	-webkit-border-radius: 0.6em;
+	
+	transition: background-color 0.3s ease;
+	
+	cursor: pointer;
 }
 .icon-button.left {
 	left: 1.2em;
 }
 .icon-button.right {
 	right: 1.2em;
+}
+.icon-button:hover {
+	transition: background-color 0.3s ease;
+	background-color: #FFEE22;
+}
+.icon-button:active {
+	transition: background-color 0.3s ease;
+	background-color: #FFFFAA;
+}
+.icon-button.delete:active {
+	background-color: red;
 }
 
 /* For example, this makes the checkmark indicating that the answer is correct green. */
