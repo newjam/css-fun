@@ -6,15 +6,12 @@
  * FFCC00 - yellow
  */
 
-/* otherwise <body> adds 8px of margin on all sides */
-body {
-	margin: 0px 8px 0px 8px;
-}
-
+/********* Header *********/
 .screen__header {
 	display: block;
 	position: fixed;
 	width: auto;
+	top: 0em;
 	left: 0em;
 	right: 0em;
 	padding: 0em 1.5em 0em 1.5em;
@@ -32,7 +29,7 @@ body {
 	letter-spacing: 0.04em;
 	word-spacing: -0.12em;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 	color: #FFCC00;
 }
 
@@ -41,7 +38,6 @@ body {
 	position: absolute;
 	width: 3.4em;
 	height: 3.4em;
-	top: 0.25em;
 	bottom: 0em;
 	margin: auto;
 	
@@ -60,6 +56,9 @@ body {
 .icon-button.right {
 	right: 1.2em;
 }
+.icon-button.top {
+	top: 0.25em;
+}
 .icon-button:hover {
 	transition: background-color 0.3s ease;
 	background-color: #FFEE22;
@@ -74,12 +73,41 @@ body {
 
 /* For example, this makes the checkmark indicating that the answer is correct green. */
 .question__options__option__correctness--correct {
-  fill: green;
+	fill: green;
 }
 
-/* Footer */
+/********* Footer *********/
 .screen__footer {
+	display: block;
 	position: fixed;
-	bottom: 0.05em;
-	width: 100%;
+	width: auto;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	height: 3.5em;
+	padding: 0em 1.5em 0em 1.5em;
+	background-color: #000BFF;
+	border-top: 0.4em solid #0008B2;
+}
+
+.quiz-info-bar__user {
+	display: block;
+	margin: auto;
+	padding-top: 0.4em;
+	font-family: Open Sans;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: bottom;
+	color: #FFCC00;
+}
+.quiz-info-bar__progress {
+	font-weight: bold;
+}
+
+.icon-button.bottom {
+	bottom: 0.45em;
+}
+.icon-button.next:active {
+	background-color: green;
 }
