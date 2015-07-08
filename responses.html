@@ -1,0 +1,428 @@
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Required by Cordova's Whitelist Plugin, Enable all requests, inline styles, and eval() -->
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- TODO: this needs to be saved locally. Only here for development. Investigating the ideal way to include external css dependencies. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
+
+
+
+  <style type="text/css"></style>
+</head>
+
+<body>
+  <div class="screen quiz-response-screen">
+    <div class="screen__header">
+      <div class="nav-bar">
+        <span> </span>
+        <button class="icon-button left">
+          <svg class="icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#previous"></use>
+          </svg>
+        </button>
+        <div class="nav-bar__title">Math Whiz</div>
+      </div>
+    </div>
+    <div class="screen__content">
+      <div class="quiz-response-list">
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Write five-ninths in numbers.</span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Write two-thirds in numbers.</span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Which of the following are like fractions? </span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Which of the following are like fractions? </span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Which of the following are like fractions? </span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">Which of the following are unlike fractions?</span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--incorrect">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#incorrect"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">____ is a unit fraction. </span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--incorrect">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#incorrect"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">____ is a unit fraction. </span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--incorrect">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#incorrect"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">What type of fractions are
+              <span class="katex">
+                <span class="katex-mathml">
+                  <math>
+                    <semantics>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mrow>
+                              <mn>3</mn>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mrow>
+                              <mn>8</mn>
+                            </mrow>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation encoding="application/x-tex">\frac{{3}}{{8}}</annotation>
+                    </semantics>
+                  </math>
+                </span>
+                <span class="katex-html" aria-hidden="true">
+                  <span class="strut" style="height:0.845108em;"></span>
+                  <span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span>
+                  <span class="base textstyle uncramped">
+                    <span class="minner reset-textstyle textstyle uncramped">
+                      <span class="mfrac">
+                        <span class="vlist">
+                          <span style="top:0.345em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle cramped">
+                              <span class="mord scriptstyle cramped">
+                                <span class="mord scriptstyle cramped">
+                                  <span class="mord">8</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span style="top:-0.22999999999999998em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle textstyle uncramped frac-line"></span>
+                          </span>
+                          <span style="top:-0.394em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle uncramped">
+                              <span class="mord scriptstyle uncramped">
+                                <span class="mord scriptstyle uncramped">
+                                  <span class="mord">3</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span class="baseline-fix">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>&#8203;</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span> and
+              <span class="katex">
+                <span class="katex-mathml">
+                  <math>
+                    <semantics>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mrow>
+                              <mn>3</mn>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mrow>
+                              <mn>5</mn>
+                            </mrow>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation encoding="application/x-tex">\frac{{3}}{{5}}</annotation>
+                    </semantics>
+                  </math>
+                </span>
+                <span class="katex-html" aria-hidden="true">
+                  <span class="strut" style="height:0.845108em;"></span>
+                  <span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span>
+                  <span class="base textstyle uncramped">
+                    <span class="minner reset-textstyle textstyle uncramped">
+                      <span class="mfrac">
+                        <span class="vlist">
+                          <span style="top:0.345em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle cramped">
+                              <span class="mord scriptstyle cramped">
+                                <span class="mord scriptstyle cramped">
+                                  <span class="mord">5</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span style="top:-0.22999999999999998em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle textstyle uncramped frac-line"></span>
+                          </span>
+                          <span style="top:-0.394em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle uncramped">
+                              <span class="mord scriptstyle uncramped">
+                                <span class="mord scriptstyle uncramped">
+                                  <span class="mord">3</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span class="baseline-fix">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>&#8203;</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>?</span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--correct">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#correct"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="quiz-response-list__item">
+          <div class="quiz-response-list__item__prompt">
+            <span class="asciimath">What type of fractions are
+              <span class="katex">
+                <span class="katex-mathml">
+                  <math>
+                    <semantics>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mrow>
+                              <mn>1</mn>
+                              <mn>7</mn>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mrow>
+                              <mn>2</mn>
+                              <mn>5</mn>
+                            </mrow>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation encoding="application/x-tex">\frac{{17}}{{25}}</annotation>
+                    </semantics>
+                  </math>
+                </span>
+                <span class="katex-html" aria-hidden="true">
+                  <span class="strut" style="height:0.845108em;"></span>
+                  <span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span>
+                  <span class="base textstyle uncramped">
+                    <span class="minner reset-textstyle textstyle uncramped">
+                      <span class="mfrac">
+                        <span class="vlist">
+                          <span style="top:0.345em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle cramped">
+                              <span class="mord scriptstyle cramped">
+                                <span class="mord scriptstyle cramped">
+                                  <span class="mord">2</span>
+                                  <span class="mord">5</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span style="top:-0.22999999999999998em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle textstyle uncramped frac-line"></span>
+                          </span>
+                          <span style="top:-0.394em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle uncramped">
+                              <span class="mord scriptstyle uncramped">
+                                <span class="mord scriptstyle uncramped">
+                                  <span class="mord">1</span>
+                                  <span class="mord">7</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span class="baseline-fix">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>&#8203;</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span> and
+              <span class="katex">
+                <span class="katex-mathml">
+                  <math>
+                    <semantics>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mrow>
+                              <mn>1</mn>
+                              <mn>2</mn>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mrow>
+                              <mn>2</mn>
+                              <mn>5</mn>
+                            </mrow>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation encoding="application/x-tex">\frac{{12}}{{25}}</annotation>
+                    </semantics>
+                  </math>
+                </span>
+                <span class="katex-html" aria-hidden="true">
+                  <span class="strut" style="height:0.845108em;"></span>
+                  <span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span>
+                  <span class="base textstyle uncramped">
+                    <span class="minner reset-textstyle textstyle uncramped">
+                      <span class="mfrac">
+                        <span class="vlist">
+                          <span style="top:0.345em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle cramped">
+                              <span class="mord scriptstyle cramped">
+                                <span class="mord scriptstyle cramped">
+                                  <span class="mord">2</span>
+                                  <span class="mord">5</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span style="top:-0.22999999999999998em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle textstyle uncramped frac-line"></span>
+                          </span>
+                          <span style="top:-0.394em;">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>
+                            <span class="reset-textstyle scriptstyle uncramped">
+                              <span class="mord scriptstyle uncramped">
+                                <span class="mord scriptstyle uncramped">
+                                  <span class="mord">1</span>
+                                  <span class="mord">2</span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                          <span class="baseline-fix">
+                            <span class="fontsize-ensurer reset-size5 size5">
+                              <span style="font-size:0em;">&#8203;</span>
+                            </span>&#8203;</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>?</span>
+          </div>
+          <div class="quiz-response-list__item__correctness quiz-response-list__item__correctness--incorrect">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#incorrect"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
