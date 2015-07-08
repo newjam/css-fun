@@ -288,6 +288,39 @@ a {
 	background-color: gray;
 }
 
+.quiz-response-list {
+	display: table;
+	position: relative;
+	margin: auto;
+	margin-left: 0.4em;
+	border-collapse: separate;
+	border-spacing: 0.2em;
+	font-family: Open Sans;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+.quiz-response-list__item {
+	display: table-row;
+}
+.quiz-response-list__item__prompt .katex {
+	letter-spacing: -0.08em;
+}
+.quiz-response-list__item__correctness {
+	display: inline-block;
+	height: 2.5em;
+}
+.quiz-response-list__item__correctness svg {
+	width: 2em;
+	height: 2em;
+	top: 0em;
+}
+.quiz-response-list__item__correctness--correct {
+	fill: green;
+}
+.quiz-response-list__item__correctness--incorrect {
+	fill: red;
+}
+
 .category-performance-list {
 	display: table;
 	position: relative;
