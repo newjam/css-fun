@@ -59,11 +59,9 @@
 	right: 1.2em;
 }
 .icon-button:hover {
-	transition: background-color 0.3s ease;
 	background-color: #FFEE22;
 }
 .icon-button:active {
-	transition: background-color 0.3s ease;
 	background-color: #FFFFAA;
 }
 .icon-button.delete:active {
@@ -126,7 +124,6 @@ a {
 	cursor: auto;
 }
 .start-quiz-confirmation__button {
-	font-size: 1.2em;
 	font-weight: bold;
 	color: #000BFF;
 	
@@ -143,9 +140,9 @@ a {
 }
 
 .question__prompt {
-	margin-bottom: 1em;
+	padding: 0.4em 0.2em 0.6em 0.2em;
 	font-family: Open Sans;
-	font-size: 3.8em;
+	font-size: 2.4em;
 	font-weight: normal;
 	text-align: left;
 	color: black;
@@ -171,7 +168,6 @@ a {
 	cursor: pointer;
 }
 .question__options__option:hover {
-	transition: background-color 0.4s ease;
 	background-color: lightGray;
 }
 
