@@ -71,11 +71,15 @@
 }
 
 /********* Content ********/
+a {
+	text-decoration: none;
+}
+
 .screen__content {
 	margin: 4.5em 0.4em 4.5em 0.4em;
 }
 
-.start-quiz-confirmation:visited {
+.start-quiz-confirmation {
 	padding-top: 0.5em;
 	font-family: Open Sans;
 	font-size: 2.4em;
@@ -85,11 +89,25 @@
 	color: black;
 	cursor: auto;
 }
-start-quiz-confirmation:visited {
+.start-quiz-confirmation__button {
 	font-size: 1.2em;
 	font-weight: bold;
-	text-decoration: none;
-	color: black;
+	color: #000BFF;
+	
+	transition: color 0.4s ease;
+	transition: background-color 0.4s ease;
+	background-color: white;
+}
+.start-quiz-confirmation__button:hover {
+	transition: color 0.4s ease;	
+	transition: background-color 0.4s ease;
+	background-color: lightGray;
+}
+.start-quiz-confirmation__button:active {
+	transition: color 0.4s ease;
+	color: white;	
+	transition: background-color 0.4s ease;
+	background-color: gray;
 }
 
 .question__prompt {
