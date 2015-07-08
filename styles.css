@@ -256,6 +256,30 @@ a {
 	letter-spacing: -0.11em;
 }
 
+.quiz-list {
+	display: table;
+	position: relative;
+	margin: auto;
+	margin-left: 0.4em;
+	border-collapse: separate;
+	border-spacing: 0.2em;
+	font-family: Open Sans;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.category-performance-list {
+	display: table;
+	position: relative;
+	margin: auto;
+	margin-left: 0.4em;
+	border-collapse: separate;
+	border-spacing: 0.2em;
+	font-family: Open Sans;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
 /********* Footer *********/
 .screen__footer {
 	display: block;
