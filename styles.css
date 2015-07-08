@@ -218,8 +218,10 @@ a {
 	display: table-row;
 	vertical-align: middle;
 	
-	transition: background-color 0.4s ease;
+	transition: background-color 0.4s ease,
+	            fill 0.4s ease;
 	background-color: white;
+	fill: white;
 	
 	cursor: pointer;
 }
@@ -228,16 +230,22 @@ a {
 }
 
 .question__options__option__correctness {
-	display: table-cell;;
+	display: table-cell;
 	padding-left: 0.4em;
 	width: 1em;
 	height: 1em;
 	vertical-align: middle;
 }
 .question__options__option__correctness--correct {
+	transition: fill 0.4s ease;
+}
+.question__options__option__correctness--correct:hover {
 	fill: green;
 }
 .question__options__option__correctness--incorrect {
+	transition: fill 0.4s ease;
+}
+.question__options__option__correctness--incorrect:hover {
 	fill: red;
 }
 
