@@ -83,16 +83,19 @@
 }
 
 .question__options {
-	display: block;
+	display: table;
 	margin: auto;
 	margin-top: 1em;
-	border-collapse: collapse;
+	margin-bottom: 1.8em;
 	font-size: 2.8em;
+	border-collapse: separate;
+	border-spacing: 0em 0.3em;
 }
 
 .question__options__option {
-	padding: 0.8em;
-	display: inline-block;
+	margin-bottom: 1em;
+	display: table-row;
+	vertical-align: middle;
 	
 	transition: background-color 0.4s ease;
 	background-color: white;
@@ -105,15 +108,24 @@
 }
 
 .question__options__option__correctness {
-	position: relative;
+	display: table-cell;;
+	padding-left: 0.4em;
 	width: 1em;
-	margin: auto;
-	padding: auto;
-	top: 0em;
-	left: -0.5em;
+	height: 1em;
+	vertical-align: middle;
+}
+.question__options__option__correctness--correct {
 	fill: green;
 }
+.question__options__option__correctness--incorrect {
+	fill: red;
+}
+
 .question__options__option__text {
+	display: table-cell;
+	padding-right: 0.4em;
+	text-align: center;
+	letter-spacing: -0.11em;
 }
 
 /********* Footer *********/
