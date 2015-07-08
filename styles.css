@@ -18,6 +18,7 @@
 	background-color: #000BFF;
 	border-bottom: 0.4em solid #0008B2;
 	cursor: default;
+	z-index: 2;
 }
 
 .nav-bar__title {
@@ -236,6 +237,7 @@ a {
 	background-color: #000BFF;
 	border-top: 0.4em solid #0008B2;
 	cursor: default;
+	z-index: 1;
 }
 
 .quiz-info-bar__user {
