@@ -333,6 +333,27 @@ a {
 	font-weight: normal;
 }
 
+.settings {
+	display: table;
+	position: relative;
+	margin: auto;
+	margin-left: 0.4em;
+	border-collapse: separate;
+	border-spacing: 0.2em;
+	font-family: Open Sans;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.settings__setting input[type=checkbox] {
+	transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+}
+
+.settings__submit-spacer {
+	height: 0.8em;
+}
+
 /********* Footer *********/
 .screen__footer {
 	display: block;
