@@ -1,0 +1,9 @@
+# Things Sass will generate
+*.css.map
+*.css
+
+
+# OS-specific files
+.DS_Store
+desktop.ini
+thumbs.db
