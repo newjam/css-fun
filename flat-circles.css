@@ -220,6 +220,53 @@
 
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 /* Palette */
+.category-performance-list {
+  display: table;
+  position: relative;
+  margin: auto;
+  margin-top: 4em;
+  margin-left: 0.4em;
+  border-collapse: collapse;
+  font-family: "Josefin Sans";
+  font-size: 1.4em;
+  font-weight: normal; }
+
+.category-performance-list__item {
+  display: table-row;
+  background-color: transparent;
+  transition: background-color 0.4s ease; }
+
+.category-performance-list__item:nth-child(odd) {
+  background-color: lightGray; }
+
+.category-performance-list__item:hover {
+  background-color: #E79DFF; }
+
+.category-performance-list__item__name {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0.15em 0.45em; }
+
+.category-performance-list__item__progress {
+  display: table-cell;
+  padding-left: 1.1em;
+  padding-right: 0.55em;
+  vertical-align: middle; }
+
+.progress-bar {
+  display: block;
+  height: 1.1rem;
+  width: 12rem;
+  margin: 0 auto;
+  border-radius: 10em/10em;
+  background-color: #9121B2; }
+
+.progress-bar__inner {
+  display: block;
+  height: 100%;
+  border-radius: 10em/10em;
+  background-color: #D555FF; }
+
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 /* Palette */
 .settings {
@@ -370,17 +417,6 @@ a {
   transform: translate(0.3rem, 0.25rem);
   box-shadow: 0.3rem 0.25rem 0.2rem gray;
   fill: #C7FF3F; }
-
-.category-performance-list {
-  display: table;
-  position: relative;
-  margin: auto;
-  margin-left: 0.4em;
-  border-collapse: separate;
-  border-spacing: 0.2em;
-  font-family: "Josefin Sans";
-  font-size: 1.4em;
-  font-weight: normal; }
 
 /********* Footer *********/
 .screen__footer {
