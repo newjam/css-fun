@@ -49,7 +49,8 @@
   width: 2.2em;
   height: 2.2em; }
 
-.nav-bar .icon-button.left {
+.nav-bar .icon-button.left,
+.icon-button.left.home {
   z-index: 3;
   width: 5.2rem;
   height: 5.2rem;
@@ -58,11 +59,26 @@
   transform: translate(-20%, -30%);
   margin: auto; }
 
-.nav-bar .icon-button.left svg {
+.nav-bar .icon-button.left svg,
+.icon-button.left.home svg {
   width: 2.4rem;
   height: 2.4rem;
   padding-top: 1rem;
   padding-left: 0.4rem; }
+
+.icon-button.right.delete {
+  z-index: 3;
+  width: 3.4rem;
+  height: 3.4rem;
+  top: 0rem;
+  right: 0rem;
+  transform: translate(45%, 65%);
+  margin: auto; }
+
+.icon-button.right.delete svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  padding-right: 1.15rem; }
 
 .icon-button:hover {
   background-color: #a9d936;
@@ -74,10 +90,11 @@
   background-color: #90b82e;
   transform: translate(0.15rem 0.125rem);
   box-shadow: 0.15rem 0.125rem 0.1rem gray;
-  fill: #9121B2; }
+  fill: #57146b; }
 
 .icon-button.delete:active {
-  background-color: #D9504C; }
+  background-color: #D9504C;
+  fill: white; }
 
 /********* Content ********/
 a {
@@ -85,7 +102,7 @@ a {
   cursor: default; }
 
 .screen__content {
-  margin: 4.5em 0.4em 4.5em 0.4em; }
+  margin: 4.5em 0.4em 1.2em 0.4em; }
 
 .home-buttons {
   display: table;
@@ -199,8 +216,8 @@ a {
   display: table-row;
   vertical-align: middle;
   transition: background-color 0.4s ease, fill 0.4s ease;
-  background-color: white;
-  fill: white;
+  background-color: transparent;
+  fill: transparent;
   cursor: pointer; }
 
 .question__options__option:hover {
@@ -213,17 +230,15 @@ a {
   height: 1em;
   vertical-align: middle; }
 
-.question__options__option__correctness--correct {
-  transition: fill 0.4s ease; }
-
-.question__options__option__correctness--correct:hover {
-  fill: green; }
-
+.question__options__option__correctness--correct,
 .question__options__option__correctness--incorrect {
   transition: fill 0.4s ease; }
 
+.question__options__option__correctness--correct:hover {
+  fill: #07D984; }
+
 .question__options__option__correctness--incorrect:hover {
-  fill: red; }
+  fill: #D9504C; }
 
 .question__options__option__text {
   display: table-cell;
@@ -323,35 +338,66 @@ a {
 
 /********* Footer *********/
 .screen__footer {
+  z-index: 1;
   display: block;
   position: fixed;
-  width: auto;
+  width: 5rem;
+  height: 8rem;
   bottom: 0em;
   left: 0em;
-  right: 0em;
-  height: 3.5em;
   padding: 0em 1.5em 0em 1.5em;
-  background-color: #000BFF;
-  border-top: 0.4em solid #0008B2;
-  cursor: default;
-  z-index: 1; }
+  text-align: center;
+  background-color: #DCFF87;
+  cursor: default; }
 
 .quiz-info-bar__user {
   display: block;
   margin: auto;
-  padding-top: 0.4em;
+  padding-top: 1.2rem;
   font-family: "Josefin Sans";
   font-size: 1.5em;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  color: #FFCC00; }
+  color: black; }
 
 .quiz-info-bar__progress {
   font-weight: bold; }
 
+.icon-button.left.solution {
+  position: fixed;
+  display: absolute;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  bottom: 0rem;
+  right: 0rem;
+  transform: translate(-180%, -45%);
+  margin: auto; }
+
+.icon-button.left.solution svg {
+  width: 1.9rem;
+  height: 1.9rem; }
+
+.icon-button.right.next {
+  position: fixed;
+  display: absolute;
+  z-index: 1.5;
+  width: 4.9rem;
+  height: 4.9rem;
+  bottom: 0rem;
+  right: 0rem;
+  transform: translate(-45%, -55%);
+  margin: auto; }
+
+.icon-button.right.next svg {
+  width: 3.1rem;
+  height: 3.1rem;
+  padding-left: 0.35rem; }
+
 .icon-button.next:active {
-  background-color: green; }
+  background-color: #07D984;
+  fill: white; }
 
 /*# sourceMappingURL=flat-circles.css.map */
 
