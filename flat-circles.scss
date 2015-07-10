@@ -394,10 +394,10 @@ a {
 	z-index: 1;
 	display: block;
 	position: fixed;
-	width: 5rem; height: 8rem;
+	width: 6.5rem; height: 8rem;
 	bottom: 0em;
 	left: 0em;
-	padding: 0em 1.5em 0em 1.5em;
+	border-radius: 0 3rem 0 0;
 	text-align: center;
 	background-color: $color-accent-light;
 	cursor: default;
@@ -406,13 +406,13 @@ a {
 .quiz-info-bar__user {
 	display: block;
 	margin: auto;
-	padding-top: 1.2rem;
+	padding-top: 1.3rem;
 	font-family: $font-body;
 	font-size: 1.5em;
 	font-weight: normal;
 	text-align: center;
 	vertical-align: middle;
-	color: black;
+	color: $color-base;
 }
 
 .quiz-info-bar__progress {
