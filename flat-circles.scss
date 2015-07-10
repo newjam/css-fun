@@ -100,16 +100,16 @@ $color-incorrect:		#D9504C;
 }
 
 .icon-button:hover {
-	background-color: $color-accent * 0.85;
+	background-color: $color-accent-dark;
 	transform: translate(0.05rem 0.05rem);
 	box-shadow: 0.25rem 0.2rem 0.15rem gray;
 	fill: black;
 }
 .icon-button:active {
-	background-color: $color-accent * 0.85 * 0.85;
+	background-color: $color-base-dark;
 	transform: translate(0.15rem 0.125rem);
 	box-shadow: 0.15rem 0.125rem 0.1rem gray;
-	fill: $color-base-dark * 0.6;
+	fill: white;
 }
 
 .icon-button.delete:active {
