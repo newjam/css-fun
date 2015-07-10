@@ -123,13 +123,12 @@ a {
 
 .home-buttons__button {
 	display: table-cell;
-	padding: 0.8em 0.7em 0.8em 0.7em;
-	border-radius: 50%;
+	padding: 0.3em 0.2em 0.3em 0.2em;
+	border-radius: 10em/10em;
 	color: $color-base-dark;
 	background-color: transparent;
 	cursor: pointer;
-	box-shadow: 0.6rem 0.5rem 0.4rem gray;
-	transform: translate(0, 0);
+	transform: translate(0,0);
 	
 	font-family: $font-body;
 	font-size: 2.4em;
@@ -147,13 +146,17 @@ a {
 				fill 0.4s ease;
 }
 
-.home-buttons__button:hover {
+.home-buttons__button:hover,
+.select-category-list__item:hover,
+.start-quiz-confirmation__button:hover {
 	background-color: lightGray;
 	transform: translate(0.1rem, 0.05rem);
 	box-shadow: 0.5rem 0.45rem 0.35rem gray;
 	fill: black;
 }
-.home-buttons__button:active {
+.home-buttons__button:active,
+.select-category-list__item:active,
+.start-quiz-confirmation__button:active {
 	color: $color-accent;
 	background-color: gray;
 	transform: translate(0.3rem, 0.25rem);
@@ -162,68 +165,63 @@ a {
 }
 
 .home-buttons__button__icon svg {
-	width: 1em;
-	height: 1em;
+	width: 1em; height: 1em;
 }
 
 .home-buttons__button__text {
-  padding: 0em 0.4em 0em 0.4em; }
+	padding: 0em 0.8em 0em 0.8em;
+}
 
 .select-category-list {
-  display: table;
-  position: relative;
-  margin: auto;
-  margin-left: 0.4em;
-  border-collapse: separate;
-  border-spacing: 0.2em;
-  font-family: $font-body;
-  font-size: 2.4em;
-  font-weight: normal; }
+	display: table;
+	position: relative;
+	margin: auto;
+	margin-left: 0.4em;
+	border-collapse: separate;
+	border-spacing: 0.2em;
+	font-family: $font-body;
+	font-size: 2.4em;
+	font-weight: normal;
+}
 
 .select-category-list__item {
-  display: table-cell;
-  padding: 0.18em 0.6em 0.18em 0.6em;
-  -moz-border-radius: 0.6em;
-  -webkit-border-radius: 0.6em;
-  border-radius: 0.6em;
-  cursor: pointer;
-  transition: color 0.4s ease, background-color 0.4s ease;
-  color: #0008B2;
-  background-color: white; }
-
-.select-category-list__item:hover {
-  background-color: lightGray; }
-
-.select-category-list__item:active {
-  color: #FFCC00;
-  background-color: gray; }
+	display: table-cell;
+	padding: 0.18em 0.6em 0.18em 0.6em;
+	border-radius: 100em/100em;
+	cursor: pointer;
+	transform: translate(0,0);
+	transition:	color 0.4s ease,
+				background-color 0.4s ease,
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
+	color: $color-base-dark;
+	background-color: transparent;
+}
 
 .start-quiz-confirmation {
-  padding-top: 0.5em;
-  font-family: $font-body;
-  font-size: 2.4em;
-  font-weight: normal;
-  line-height: 1.8em;
-  text-align: center;
-  color: black;
-  cursor: default; }
+	padding-top: 0.5em;
+	font-family: $font-body;
+	font-size: 2.4em;
+	font-weight: normal;
+	line-height: 1.8em;
+	text-align: center;
+	color: black;
+	cursor: default;
+}
 
 .start-quiz-confirmation__button {
-  -moz-border-radius: 0.6em;
-  -webkit-border-radius: 0.6em;
-  border-radius: 0.6em;
-  font-weight: bold;
-  color: #0008B2;
-  cursor: pointer;
-  transition: color 0.4s ease, background-color 0.4s ease;
-  background-color: white; }
-
-.start-quiz-confirmation__button:hover {
-  background-color: lightGray; }
-
-.start-quiz-confirmation__button:active {
-  color: #FFCC00;
-  background-color: gray; }
+	font-weight: bold;
+	border-radius: 10em/10em;
+	transform: translate(0,0);
+	color: $color-base-dark;
+	background-color: transparent;
+	cursor: pointer;
+	transition:	color 0.4s ease,
+				background-color 0.4s ease,
+				fill 0.4s ease,
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
+}
 
 .question__prompt {
   padding: 0.4em 0.2em 0.6em 0.2em;
