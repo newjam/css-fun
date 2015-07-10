@@ -17,7 +17,7 @@ $color-incorrect:		#D9504C;
 .screen__header {
 	display: block;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	margin: auto;
 	cursor: default;
@@ -132,10 +132,10 @@ a {
 	margin: auto;
 	border-collapse: separate;
 	border-spacing: 0.8em;
-}
-
-.home-buttons__button-container {
-	display: table-row;
+	
+	&__button-container {
+		display: table-row;
+	}
 }
 
 .home-buttons__button {
@@ -456,3 +456,4 @@ a {
 }
 
 /*# sourceMappingURL=flat-circles.css.map */
+
