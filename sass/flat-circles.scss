@@ -125,7 +125,8 @@ a {
 
 .home-buttons__button:hover,
 .select-category-list__item:hover,
-.start-quiz-confirmation__button:hover {
+.start-quiz-confirmation__button:hover,
+.settings__submit-container input[type=submit]:hover {
 	background-color: lightGray;
 	transform: translate(0.1rem, 0.05rem);
 	box-shadow: 0.5rem 0.45rem 0.35rem gray;
@@ -133,7 +134,8 @@ a {
 }
 .home-buttons__button:active,
 .select-category-list__item:active,
-.start-quiz-confirmation__button:active {
+.start-quiz-confirmation__button:active,
+.settings__submit-container input[type=submit]:active {
 	color: $color-accent;
 	background-color: gray;
 	transform: translate(0.3rem, 0.25rem);
@@ -151,24 +153,6 @@ a {
   font-family: $font-body;
   font-size: 1.4em;
   font-weight: normal; }
-
-.settings {
-  display: table;
-  position: relative;
-  margin: auto;
-  margin-left: 0.4em;
-  border-collapse: separate;
-  border-spacing: 0.2em;
-  font-family: $font-body;
-  font-size: 1.4em;
-  font-weight: normal; }
-
-.settings__setting input[type=checkbox] {
-  transform: scale(1.8);
-  -webkit-transform: scale(1.8); }
-
-.settings__submit-spacer {
-  height: 0.8em; }
 
 /********* Footer *********/
 .screen__footer {
