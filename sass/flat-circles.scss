@@ -141,67 +141,6 @@ a {
 	fill: $color-accent;
 }
 
-.quiz-list {
-  display: table;
-  position: relative;
-  margin: auto;
-  margin-left: 0.4em;
-  border-collapse: separate;
-  border-spacing: 0.2em;
-  font-family: $font-body;
-  font-size: 1.4em;
-  font-weight: normal; }
-
-.quiz-list__item {
-  display: table-cell;
-  padding: 0.2em 0.8em 0.2em 0.8em;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  cursor: pointer;
-  transition: color 0.4s ease, background-color 0.4s ease;
-  color: #0008B2;
-  background-color: white; }
-
-.quiz-list__item:hover {
-  background-color: lightGray; }
-
-.quiz-list__item:active {
-  color: #FFCC00;
-  background-color: gray; }
-
-.quiz-response-list {
-  display: table;
-  position: relative;
-  margin: auto;
-  margin-left: 0.4em;
-  border-collapse: separate;
-  border-spacing: 0.2em;
-  font-family: $font-body;
-  font-size: 1.4em;
-  font-weight: normal; }
-
-.quiz-response-list__item {
-  display: table-row; }
-
-.quiz-response-list__item__prompt .katex {
-  letter-spacing: -0.08em; }
-
-.quiz-response-list__item__correctness {
-  display: inline-block;
-  height: 2.5em; }
-
-.quiz-response-list__item__correctness svg {
-  width: 2em;
-  height: 2em;
-  top: 0em; }
-
-.quiz-response-list__item__correctness--correct {
-  fill: green; }
-
-.quiz-response-list__item__correctness--incorrect {
-  fill: red; }
-
 .category-performance-list {
   display: table;
   position: relative;
