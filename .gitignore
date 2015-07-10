@@ -1,7 +1,6 @@
 # Things Sass will generate
 *.scssc
 *.css.map
-*.css
 
 
 # OS-specific files
