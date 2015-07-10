@@ -24,42 +24,16 @@ $color-incorrect:		#D9504C;
 	z-index: 2;
 }
 
-.nav-bar__title::before {
-	content: "";
-	display: block;
-	position: relative;
-	width: 8rem; height: 8rem;
-	top: 2rem;
-	margin: auto;
-	border-radius: 50%;
-	background-color: $color-base;
-}
-.nav-bar__title {
-	display: block;
-	position: relative;
-	text-align: center;
-	vertical-align: middle;
-	margin: auto;
-
-	font-family: $font-body;
-	font-size: 3rem;
-	font-weight: bold;
-	letter-spacing: 0.04rem;
-	word-spacing: -0.16rem;
-	color: black;
-}
-
-/* Kinda working stuff */
-/*
 .nav-bar__title {
 	text-align: center;
 	display: block;
-	position: fixed;
+	position: relative;
 	width: 60rem; height: 60rem;
-	margin: 0 auto;
-	top: -56rem; 
-	//right: -15vw;
-	line-height: 115rem;
+	margin: auto;
+	margin-left: calc(50% - 30rem);
+	margin-top: -55.8rem;
+	transform: translate(5%, 0);
+	line-height: 115.2rem;
 	border-radius: 50%;
 	background-color: $color-base;
 	
@@ -70,28 +44,29 @@ $color-incorrect:		#D9504C;
 	word-spacing: -0.16rem;
 	color: white;
 }
-*/
 
 .icon-button {
-  display: inline-block;
-  position: absolute;
-  width: 3.4em;
-  height: 3.4em;
-  top: 0em;
-  bottom: 0em;
-  margin: auto;
-  border: none;
-  background-color: $color-accent;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-  cursor: pointer; }
+	z-index: 3;
+	display: inline-block;
+	position: absolute;
+	width: 3.4em;
+	height: 3.4em;
+	top: 0em;
+	left: 0em;
+	margin: auto;
+	border: none;
+	background-color: $color-accent;
+	border-radius: 50%;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
 
 .icon-button svg {
   width: 2.2em;
   height: 2.2em; }
 
 .icon-button.left {
-  left: 1.2em; }
+  left: 0em; }
 
 .icon-button.right {
   right: 1.2em; }
