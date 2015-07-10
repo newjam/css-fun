@@ -1,17 +1,13 @@
-/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
-$font-title: "Josefin Sans";
-$font-body: "Josefin Sans";
+@import 'flat-circles__globals';
 
-/* Palette */
-$color-base:			#D555FF;
-$color-base-light:		#E79DFF;
-$color-base-dark:		#9121B2;
-$color-accent:			#C7FF3F;
-$color-accent-light:	#DCFF87;
-$color-accent-dark:		#92C21C;
-$color-correct:			#07D984;
-$color-incorrect:		#D9504C;
+@import 'flat-circles_home';
+@import 'flat-circles_select-category';
+@import 'flat-circles_quiz-confirmation';
+@import 'flat-circles_quiz';
+@import 'flat-circles_history';
+@import 'flat-circles_responses';
+@import 'flat-circles_performance';
+@import 'flat-circles_student-settings';
 
 /********* Header *********/
 .screen__header {
@@ -127,42 +123,6 @@ a {
 	margin: 4.5em 0.4em 1.2em 0.4em;
 }
 
-.home-buttons {
-	display: table;
-	margin: auto;
-	border-collapse: separate;
-	border-spacing: 0.8em;
-	
-	&__button-container {
-		display: table-row;
-	}
-}
-
-.home-buttons__button {
-	display: table-cell;
-	padding: 0.3em 0.2em 0.3em 0.2em;
-	border-radius: 10em/10em;
-	color: $color-base-dark;
-	background-color: transparent;
-	cursor: pointer;
-	transform: translate(0,0);
-	
-	font-family: $font-body;
-	font-size: 2.4em;
-	font-weight: normal;
-	text-align: center;
-	color: $color-base-dark;
-	background-color: transparent;
-	fill: black;
-	cursor: pointer;
-	
-	transition:	color 0.4s ease,
-				background-color 0.4s ease,
-				transform 0.2s ease,
-				box-shadow 0.2s ease,
-				fill 0.4s ease;
-}
-
 .home-buttons__button:hover,
 .select-category-list__item:hover,
 .start-quiz-confirmation__button:hover {
@@ -179,124 +139,6 @@ a {
 	transform: translate(0.3rem, 0.25rem);
 	box-shadow: 0.3rem 0.25rem 0.2rem gray;
 	fill: $color-accent;
-}
-
-.home-buttons__button__icon svg {
-	width: 1em; height: 1em;
-}
-
-.home-buttons__button__text {
-	padding: 0em 0.8em 0em 0.8em;
-}
-
-.select-category-list {
-	display: table;
-	position: relative;
-	margin: auto;
-	margin-left: 0.4em;
-	border-collapse: separate;
-	border-spacing: 0.2em;
-	font-family: $font-body;
-	font-size: 2.4em;
-	font-weight: normal;
-}
-
-.select-category-list__item {
-	display: table-cell;
-	padding: 0.18em 0.6em 0.18em 0.6em;
-	border-radius: 100em/100em;
-	cursor: pointer;
-	transform: translate(0,0);
-	transition:	color 0.4s ease,
-				background-color 0.4s ease,
-				transform 0.2s ease,
-				box-shadow 0.2s ease;
-	color: $color-base-dark;
-	background-color: transparent;
-}
-
-.start-quiz-confirmation {
-	padding-top: 0.5em;
-	font-family: $font-body;
-	font-size: 2.4em;
-	font-weight: normal;
-	line-height: 1.8em;
-	text-align: center;
-	color: black;
-	cursor: default;
-}
-
-.start-quiz-confirmation__button {
-	font-weight: bold;
-	border-radius: 10em/10em;
-	transform: translate(0,0);
-	color: $color-base-dark;
-	background-color: transparent;
-	cursor: pointer;
-	transition:	color 0.4s ease,
-				background-color 0.4s ease,
-				fill 0.4s ease,
-				transform 0.2s ease,
-				box-shadow 0.2s ease;
-}
-
-.question__prompt {
-	padding: 0.4em 0.2em 0.6em 0.2em;
-	font-family: $font-body;
-	font-size: 2.4em;
-	font-weight: normal;
-	text-align: left;
-	color: black;
-}
-
-.question__options {
-	display: table;
-	margin: auto;
-	margin-bottom: 1em;
-	font-size: 2.8em;
-	border-collapse: separate;
-	border-spacing: 0em 0.3em;
-}
-
-.question__options__option {
-	margin-bottom: 1em;
-	display: table-row;
-	vertical-align: middle;
-	transition:	background-color 0.4s ease,
-				fill 0.4s ease;
-	background-color: transparent;
-	fill: transparent;
-	cursor: pointer;
-}
-
-.question__options__option:hover {
-	background-color: lightGray;
-}
-
-.question__options__option__correctness {
-	display: table-cell;
-	padding-left: 0.4em;
-	width: 1em;
-	height: 1em;
-	vertical-align: middle;
-}
-
-.question__options__option__correctness--correct,
-.question__options__option__correctness--incorrect {
-	transition: fill 0.4s ease;
-}
-.question__options__option__correctness--correct:hover {
-	fill: $color-correct;
-}
-.question__options__option__correctness--incorrect:hover {
-	fill: $color-incorrect;
-}
-
-.question__options__option__text {
-	display: table-cell;
-	padding-right: 0.4em;
-	text-align: center;
-	letter-spacing: -0.11em;
 }
 
 .quiz-list {
@@ -454,6 +296,3 @@ a {
 	background-color: $color-correct;
 	fill: white;
 }
-
-/*# sourceMappingURL=flat-circles.css.map */
-
