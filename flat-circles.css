@@ -361,8 +361,8 @@
 .icon-button.left.home svg {
   width: 2.4rem;
   height: 2.4rem;
-  padding-top: 1rem;
-  padding-left: 0.4rem; }
+  padding-top: 2rem;
+  padding-left: 1.6rem; }
 
 .icon-button.right.delete {
   z-index: 3;
@@ -376,7 +376,8 @@
 .icon-button.right.delete svg {
   width: 1.3rem;
   height: 1.3rem;
-  padding-right: 1.15rem; }
+  padding-top: 0.95rem;
+  padding-left: 0.35rem; }
 
 .icon-button:hover {
   background-color: #92C21C;
@@ -462,7 +463,9 @@ a {
 
 .icon-button.left.solution svg {
   width: 1.9rem;
-  height: 1.9rem; }
+  height: 1.9rem;
+  padding-top: 0.55rem;
+  padding-left: 0.15rem; }
 
 .icon-button.right.next {
   position: fixed;
@@ -478,7 +481,8 @@ a {
 .icon-button.right.next svg {
   width: 3.1rem;
   height: 3.1rem;
-  padding-left: 0.35rem; }
+  padding-top: 0.85rem;
+  padding-left: 0.45rem; }
 
 .icon-button.next:active {
   background-color: #07D984;
