@@ -80,6 +80,8 @@
   cursor: default; }
 
 .start-quiz-confirmation__button {
+  display: inline-block;
+  padding: 0.1em 1em;
   font-weight: bold;
   border-radius: 10em/10em;
   transform: translate(0, 0);
@@ -377,7 +379,7 @@
   width: 1.3rem;
   height: 1.3rem;
   padding-top: 0.95rem;
-  padding-left: 0.35rem; }
+  padding-left: 0.5rem; }
 
 .icon-button:hover {
   background-color: #92C21C;
