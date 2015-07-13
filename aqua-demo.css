@@ -1,9 +1,11 @@
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 /* Palette */
+/* Image URLs */
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 /* Palette */
+/* Image URLs */
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
@@ -97,6 +99,7 @@ body {
 
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 /* Palette */
+/* Image URLs */
 .select-category-list {
   display: table;
   position: relative;
@@ -120,6 +123,7 @@ body {
 
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 /* Palette */
+/* Image URLs */
 .start-quiz-confirmation {
   padding-top: 0.5em;
   font-family: "Insaniburger";
@@ -143,6 +147,7 @@ body {
 
 /* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
 /* Palette */
+/* Image URLs */
 .question__prompt {
   padding: 0.4em 0.2em 0.6em 0.2em;
   font-family: "Insaniburger";
@@ -300,6 +305,10 @@ a {
 
 .screen__content {
   margin: 4.5em 0.4em 1.2em 0.4em; }
+
+.screen__content:after {
+  display: none;
+  content: url("images/aqua-demo/button-red-active.png") url("images/aqua-demo/button-red-hover.png") url("images/aqua-demo/button-green-active.png") url("images/aqua-demo/button-green-hover.png") url("images/aqua-demo/button-magenta-active.png") url("images/aqua-demo/button-magenta-hover.png") url("images/aqua-demo/button-blue-active.png") url("images/aqua-demo/button-blue-hover.png") url("images/aqua-demo/button-info-active.png") url("images/aqua-demo/button-info-hover.png"); }
 
 /********* Footer *********/
 .screen__footer {

@@ -1,7 +1,7 @@
 @import 'aqua-demo__globals';
 
 body {
-	background-image: url("images/aqua-demo/background-color.png");
+	background-image: url($url-img-background-color);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -17,17 +17,17 @@ body {
 	position: absolute;
 	width: 5rem; height: 15rem;
 	
-	background-image: url("images/aqua-demo/button-info.png");
+	background-image: url($url-img-button-info);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-clip: padding-content;
 }
 .nav-bar .icon-button.left:hover {
-	background-image: url("images/aqua-demo/button-info-hover.png");
+	background-image: url($url-img-button-info-hover);
 }
 .nav-bar .icon-button.left:active {
-	background-image: url("images/aqua-demo/button-info-active.png");
+	background-image: url($url-img-button-info-active);
 }
 
 .home-buttons {
@@ -59,10 +59,10 @@ body {
 }
 
 .home-buttons__button__quiz {
-	background-image: url("images/aqua-demo/button-blue.png");
+	background-image: url($url-img-button-blue);
 }
 .home-buttons__button__quiz:hover {
-	background-image: url("images/aqua-demo/button-blue-hover.png");
+	background-image: url($url-img-button-blue-hover);
 }
 .home-buttons__button__quiz:active {
 	background-image: url("images/aqua-demo/button-blue-active.png");

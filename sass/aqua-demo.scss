@@ -14,7 +14,7 @@
 	top: 0;
 	margin: auto;
 	
-	background-image: url("images/aqua-demo/header-panel.png");
+	background-image: url($url-img-header-panel);
 	background-position: center -5.4rem;
 	background-repeat: no-repeat;
 	background-size: auto 15rem;
@@ -24,7 +24,7 @@
 }
 
 .nav-bar__title {
-	background-image: url("images/aqua-demo/logo-text.png");
+	background-image: url($url-img-logo-text);
 	background-position: center;
 	background-repeat: no-repeat;
 	
@@ -121,6 +121,19 @@ a {
 
 .screen__content {
 	margin: 4.5em 0.4em 1.2em 0.4em;
+}
+.screen__content:after {
+	display: none;
+	content:	url($url-img-button-red-active)
+				url($url-img-button-red-hover)
+				url($url-img-button-green-active)
+				url($url-img-button-green-hover)
+				url($url-img-button-magenta-active)
+				url($url-img-button-magenta-hover)
+				url($url-img-button-blue-active)
+				url($url-img-button-blue-hover)
+				url($url-img-button-info-active)
+				url($url-img-button-info-hover);
 }
 
 /********* Footer *********/
