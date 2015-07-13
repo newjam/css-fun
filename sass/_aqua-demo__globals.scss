@@ -1,0 +1,36 @@
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+$font-title: "Insaniburger";
+$font-body: "Insaniburger";
+
+/* Palette */
+$color-base:			#D555FF;
+$color-base-light:		#E79DFF;
+$color-base-dark:		#9121B2;
+$color-accent:			#C7FF3F;
+$color-accent-light:	#DCFF87;
+$color-accent-dark:		#92C21C;
+$color-correct:			#07D984;
+$color-incorrect:		#D9504C;
+
+/* Image URLs */
+$url-img-dir:		"images/aqua-demo/";
+$url-img-logo-text:			$url-img-dir + "logo-text.png";
+$url-img-header-panel:		$url-img-dir + "header-panel.png";
+$url-img-background-color:	$url-img-dir + "background-color.png";
+$url-img-button-:				$url-img-dir + "button-";
+$url-img-button-info:			$url-img-button- + "info.png";
+$url-img-button-info-hover:		$url-img-button- + "info-hover.png";
+$url-img-button-info-active:	$url-img-button- + "info-active.png";
+$url-img-button-blue:			$url-img-button- + "blue.png";
+$url-img-button-blue-hover:		$url-img-button- + "blue-hover.png";
+$url-img-button-blue-active:	$url-img-button- + "blue-active.png";
+$url-img-button-magenta:		$url-img-button- + "magenta.png";
+$url-img-button-magenta-hover:	$url-img-button- + "magenta-hover.png";
+$url-img-button-magenta-active:	$url-img-button- + "magenta-active.png";
+$url-img-button-green:			$url-img-button- + "green.png";
+$url-img-button-green-hover:	$url-img-button- + "green-hover.png";
+$url-img-button-green-active:	$url-img-button- + "green-active.png";
+$url-img-button-red:			$url-img-button- + "red.png";
+$url-img-button-red-hover:		$url-img-button- + "red-hover.png";
+$url-img-button-red-active:		$url-img-button- + "red-active.png";

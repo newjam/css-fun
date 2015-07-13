@@ -1,0 +1,379 @@
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+/* Palette */
+/* Image URLs */
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+/* Palette */
+/* Image URLs */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+body {
+  background-image: url("images/aqua-demo/background-color.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: padding-content;
+  background-color: black; }
+
+.nav-bar .icon-button.left svg {
+  display: none; }
+
+.nav-bar .icon-button.left {
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 15rem;
+  background-image: url("images/aqua-demo/button-info.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: padding-content; }
+
+.nav-bar .icon-button.left:hover {
+  background-image: url("images/aqua-demo/button-info-hover.png"); }
+
+.nav-bar .icon-button.left:active {
+  background-image: url("images/aqua-demo/button-info-active.png"); }
+
+.home-buttons {
+  display: table;
+  margin: auto;
+  margin-top: 10em;
+  border-collapse: collapse; }
+  .home-buttons__button-container {
+    display: table-row; }
+
+.home-buttons__button {
+  display: table-cell;
+  background-position: center;
+  background-size: 12em;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  padding: 1.7em 2.2em;
+  font-family: "Insaniburger";
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+
+.home-buttons__button__quiz {
+  background-image: url("images/aqua-demo/button-blue.png"); }
+
+.home-buttons__button__quiz:hover {
+  background-image: url("images/aqua-demo/button-blue-hover.png"); }
+
+.home-buttons__button__quiz:active {
+  background-image: url("images/aqua-demo/button-blue-active.png"); }
+
+.home-buttons__button__responses {
+  background-image: url("images/aqua-demo/button-magenta.png"); }
+
+.home-buttons__button__responses:hover {
+  background-image: url("images/aqua-demo/button-magenta-hover.png"); }
+
+.home-buttons__button__responses:active {
+  background-image: url("images/aqua-demo/button-magenta-active.png"); }
+
+.home-buttons__button__performance {
+  background-image: url("images/aqua-demo/button-green.png"); }
+
+.home-buttons__button__performance:hover {
+  background-image: url("images/aqua-demo/button-green-hover.png"); }
+
+.home-buttons__button__performance:active {
+  background-image: url("images/aqua-demo/button-green-active.png"); }
+
+.home-buttons__button__settings {
+  background-image: url("images/aqua-demo/button-red.png"); }
+
+.home-buttons__button__settings:hover {
+  background-image: url("images/aqua-demo/button-red-hover.png"); }
+
+.home-buttons__button__settings:active {
+  background-image: url("images/aqua-demo/button-red-active.png"); }
+
+.home-buttons__button__icon svg {
+  display: none; }
+
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+/* Palette */
+/* Image URLs */
+.select-category-list {
+  display: table;
+  position: relative;
+  margin: auto;
+  margin-left: 0.4em;
+  border-collapse: separate;
+  border-spacing: 0.2em;
+  font-family: "Insaniburger";
+  font-size: 2.4em;
+  font-weight: normal; }
+
+.select-category-list__item {
+  display: table-cell;
+  padding: 0.18em 0.6em 0.18em 0.6em;
+  border-radius: 100em/100em;
+  cursor: pointer;
+  transform: translate(0, 0);
+  transition: color 0.4s ease, background-color 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  color: #9121B2;
+  background-color: transparent; }
+
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+/* Palette */
+/* Image URLs */
+.start-quiz-confirmation {
+  padding-top: 0.5em;
+  font-family: "Insaniburger";
+  font-size: 2.4em;
+  font-weight: normal;
+  line-height: 1.8em;
+  text-align: center;
+  color: black;
+  cursor: default; }
+
+.start-quiz-confirmation__button {
+  display: inline-block;
+  padding: 0.1em 1em;
+  font-weight: bold;
+  border-radius: 10em/10em;
+  transform: translate(0, 0);
+  color: #9121B2;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.4s ease, background-color 0.4s ease, fill 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+
+/* Google Fonts: "Josefin Sans". Requesting both normal and bold. */
+/* Palette */
+/* Image URLs */
+.question__prompt {
+  padding: 0.4em 0.2em 0.6em 0.2em;
+  font-family: "Insaniburger";
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: left;
+  color: black; }
+
+.question__options {
+  display: table;
+  margin: auto;
+  margin-bottom: 1em;
+  font-size: 2.8em;
+  border-collapse: separate;
+  border-spacing: 0em 0.3em; }
+
+.question__options__option {
+  margin-bottom: 1em;
+  display: table-row;
+  vertical-align: middle;
+  transition: background-color 0.4s ease, fill 0.4s ease;
+  background-color: transparent;
+  fill: transparent;
+  cursor: pointer; }
+
+.question__options__option:hover {
+  background-color: lightGray; }
+
+.question__options__option__correctness {
+  display: table-cell;
+  padding-left: 0.4em;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle; }
+
+.question__options__option__correctness--correct,
+.question__options__option__correctness--incorrect {
+  transition: fill 0.4s ease; }
+
+.question__options__option__correctness--correct:hover {
+  fill: #07D984; }
+
+.question__options__option__correctness--incorrect:hover {
+  fill: #D9504C; }
+
+.question__options__option__text {
+  display: table-cell;
+  padding-right: 0.4em;
+  text-align: center;
+  letter-spacing: -0.11em; }
+
+/********* Header *********/
+.screen__header {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 10rem;
+  top: 0;
+  margin: auto;
+  background-image: url("images/aqua-demo/header-panel.png");
+  background-position: center -5.4rem;
+  background-repeat: no-repeat;
+  background-size: auto 15rem;
+  cursor: default;
+  z-index: 2; }
+
+.nav-bar__title {
+  background-image: url("images/aqua-demo/logo-text.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+  position: fixed;
+  width: 60rem;
+  height: 10rem;
+  margin: auto;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Insaniburger";
+  color: transparent; }
+
+/* .icon-button {
+	display: block;
+	position: fixed;
+	width: 3.4rem; height: 3.4rem;
+	transform: translate(0, 0);
+	box-shadow: 0.3rem 0.25rem 0.25rem gray;
+	border: none;
+	background-color: $color-accent;
+	fill: black;
+	border-radius: 50%;
+	cursor: pointer;
+	
+	transition:	background-color 0.3s ease,
+				transform 0.15s ease,
+				box-shadow 0.15s ease,
+				fill 0.3s ease;
+}
+
+.icon-button svg {
+	width: 2.2em;
+	height: 2.2em;
+} */
+/* .nav-bar .icon-button.left,
+.icon-button.left.home {
+	z-index: 3;
+	width: 5.2rem;
+	height: 5.2rem;
+	top: 0rem; left: 0rem;
+	transform: translate(-20%, -30%);
+	margin: auto;
+}
+.nav-bar .icon-button.left svg,
+.icon-button.left.home svg {
+	width: 2.4rem;
+	height: 2.4rem;
+	padding-top: 2rem;
+	padding-left: 1.6rem;
+} */
+.icon-button.right.delete {
+  z-index: 3;
+  width: 3.4rem;
+  height: 3.4rem;
+  top: 0rem;
+  right: 0rem;
+  transform: translate(45%, 65%);
+  margin: auto; }
+
+.icon-button.right.delete svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  padding-top: 0.95rem;
+  padding-left: 0.5rem; }
+
+/* .icon-button:hover {
+	background-color: $color-accent-dark;
+	transform: translate(0.05rem 0.05rem);
+	box-shadow: 0.25rem 0.2rem 0.15rem gray;
+	fill: black;
+}
+.icon-button:active {
+	background-color: $color-base-dark;
+	transform: translate(0.15rem 0.125rem);
+	box-shadow: 0.15rem 0.125rem 0.1rem gray;
+	fill: white;
+} */
+.icon-button.delete:active {
+  background-color: #D9504C;
+  fill: white; }
+
+/********* Content ********/
+a {
+  text-decoration: none;
+  cursor: default; }
+
+.screen__content {
+  margin: 4.5em 0.4em 1.2em 0.4em; }
+
+.screen__content:after {
+  display: none;
+  content: url("images/aqua-demo/button-red-active.png") url("images/aqua-demo/button-red-hover.png") url("images/aqua-demo/button-green-active.png") url("images/aqua-demo/button-green-hover.png") url("images/aqua-demo/button-magenta-active.png") url("images/aqua-demo/button-magenta-hover.png") url("images/aqua-demo/button-blue-active.png") url("images/aqua-demo/button-blue-hover.png") url("images/aqua-demo/button-info-active.png") url("images/aqua-demo/button-info-hover.png"); }
+
+/********* Footer *********/
+.screen__footer {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  width: 6.5rem;
+  height: 8rem;
+  bottom: 0em;
+  left: 0em;
+  border-radius: 0 3rem 0 0;
+  text-align: center;
+  background-color: #DCFF87;
+  cursor: default; }
+
+.quiz-info-bar__user {
+  display: block;
+  margin: auto;
+  padding-top: 1.3rem;
+  font-family: "Insaniburger";
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  color: #D555FF; }
+
+.quiz-info-bar__progress {
+  font-weight: bold; }
+
+.icon-button.left.solution {
+  position: fixed;
+  display: absolute;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  bottom: 0rem;
+  right: 0rem;
+  transform: translate(-180%, -45%);
+  margin: auto; }
+
+.icon-button.left.solution svg {
+  width: 1.9rem;
+  height: 1.9rem;
+  padding-top: 0.55rem;
+  padding-left: 0.15rem; }
+
+.icon-button.right.next {
+  position: fixed;
+  display: absolute;
+  z-index: 1.5;
+  width: 4.9rem;
+  height: 4.9rem;
+  bottom: 0rem;
+  right: 0rem;
+  transform: translate(-45%, -55%);
+  margin: auto; }
+
+.icon-button.right.next svg {
+  width: 3.1rem;
+  height: 3.1rem;
+  padding-top: 0.85rem;
+  padding-left: 0.45rem; }
+
+.icon-button.next:active {
+  background-color: #07D984;
+  fill: white; }
+
+/*# sourceMappingURL=aqua-demo.css.map */

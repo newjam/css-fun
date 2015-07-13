@@ -1,0 +1,104 @@
+@import 'aqua-demo__globals';
+
+body {
+	background-image: url($url-img-background-color);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: padding-content;
+	background-color: black;
+}
+
+.nav-bar .icon-button.left svg {
+	display: none;
+}
+.nav-bar .icon-button.left {
+	display: block;
+	position: absolute;
+	width: 5rem; height: 15rem;
+	
+	background-image: url($url-img-button-info);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: padding-content;
+}
+.nav-bar .icon-button.left:hover {
+	background-image: url($url-img-button-info-hover);
+}
+.nav-bar .icon-button.left:active {
+	background-image: url($url-img-button-info-active);
+}
+
+.home-buttons {
+	display: table;
+	margin: auto;
+	margin-top: 10em;
+	border-collapse: collapse;
+	
+	&__button-container {
+		display: table-row;
+	}
+}
+
+.home-buttons__button {
+	display: table-cell;
+	background-position: center;
+	background-size: 12em;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	
+	padding: 1.7em 2.2em;
+	
+	font-family: $font-body;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	
+	cursor: pointer;
+}
+
+.home-buttons__button__quiz {
+	background-image: url($url-img-button-blue);
+}
+.home-buttons__button__quiz:hover {
+	background-image: url($url-img-button-blue-hover);
+}
+.home-buttons__button__quiz:active {
+	background-image: url("images/aqua-demo/button-blue-active.png");
+}
+
+.home-buttons__button__responses {
+	background-image: url("images/aqua-demo/button-magenta.png");
+}
+.home-buttons__button__responses:hover {
+	background-image: url("images/aqua-demo/button-magenta-hover.png");
+}
+.home-buttons__button__responses:active {
+	background-image: url("images/aqua-demo/button-magenta-active.png");
+}
+
+.home-buttons__button__performance {
+	background-image: url("images/aqua-demo/button-green.png");
+}
+.home-buttons__button__performance:hover {
+	background-image: url("images/aqua-demo/button-green-hover.png");
+}
+.home-buttons__button__performance:active {
+	background-image: url("images/aqua-demo/button-green-active.png");
+}
+
+.home-buttons__button__settings {
+	background-image: url("images/aqua-demo/button-red.png");
+}
+.home-buttons__button__settings:hover {
+	background-image: url("images/aqua-demo/button-red-hover.png");
+}
+.home-buttons__button__settings:active {
+	background-image: url("images/aqua-demo/button-red-active.png");
+}
+
+
+.home-buttons__button__icon svg {
+	display: none;
+}

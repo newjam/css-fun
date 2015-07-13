@@ -1,0 +1,12 @@
+# Temporary directory for emu
+aqua-demo/*
+
+# Things Sass will generate
+*.scssc
+*.css.map
+
+
+# OS-specific files
+.DS_Store
+desktop.ini
+thumbs.db

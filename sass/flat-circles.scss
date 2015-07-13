@@ -1,0 +1,214 @@
+@import 'flat-circles__globals';
+
+@import 'flat-circles_home';
+@import 'flat-circles_select-category';
+@import 'flat-circles_quiz-confirmation';
+@import 'flat-circles_quiz';
+@import 'flat-circles_history';
+@import 'flat-circles_responses';
+@import 'flat-circles_performance';
+@import 'flat-circles_student-settings';
+
+/********* Header *********/
+.screen__header {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	margin: auto;
+	cursor: default;
+	z-index: 2;
+}
+
+.nav-bar__title {
+	text-align: center;
+	display: block;
+	position: fixed;
+	width: 60rem; height: 60rem;
+	margin: auto;
+	margin-left: calc(50% - 30rem);
+	margin-top: -55.8rem;
+	transform: translate(5%, 0);
+	line-height: 115.2rem;
+	border-radius: 50%;
+	background-color: $color-base;
+	
+	font-family: $font-body;
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: 0.04rem;
+	word-spacing: -0.16rem;
+	color: white;
+}
+
+.icon-button {
+	display: block;
+	position: fixed;
+	width: 3.4rem; height: 3.4rem;
+	transform: translate(0, 0);
+	box-shadow: 0.3rem 0.25rem 0.25rem gray;
+	border: none;
+	background-color: $color-accent;
+	fill: black;
+	border-radius: 50%;
+	cursor: pointer;
+	
+	transition:	background-color 0.3s ease,
+				transform 0.15s ease,
+				box-shadow 0.15s ease,
+				fill 0.3s ease;
+}
+
+.icon-button svg {
+	width: 2.2em;
+	height: 2.2em;
+}
+
+.nav-bar .icon-button.left,
+.icon-button.left.home {
+	z-index: 3;
+	width: 5.2rem;
+	height: 5.2rem;
+	top: 0rem; left: 0rem;
+	transform: translate(-20%, -30%);
+	margin: auto;
+}
+.nav-bar .icon-button.left svg,
+.icon-button.left.home svg {
+	width: 2.4rem;
+	height: 2.4rem;
+	padding-top: 2rem;
+	padding-left: 1.6rem;
+}
+
+.icon-button.right.delete {
+	z-index: 3;
+	width: 3.4rem;
+	height: 3.4rem;
+	top: 0rem; right: 0rem;
+	transform: translate(45%, 65%);
+	margin: auto;
+}
+.icon-button.right.delete svg {
+	width: 1.3rem;
+	height: 1.3rem;
+	padding-top: 0.95rem;
+	padding-left: 0.5rem;
+}
+
+.icon-button:hover {
+	background-color: $color-accent-dark;
+	transform: translate(0.05rem 0.05rem);
+	box-shadow: 0.25rem 0.2rem 0.15rem gray;
+	fill: black;
+}
+.icon-button:active {
+	background-color: $color-base-dark;
+	transform: translate(0.15rem 0.125rem);
+	box-shadow: 0.15rem 0.125rem 0.1rem gray;
+	fill: white;
+}
+
+.icon-button.delete:active {
+	background-color: $color-incorrect;
+	fill: white;
+}
+
+/********* Content ********/
+a {
+	text-decoration: none;
+	cursor: default;
+}
+
+.screen__content {
+	margin: 4.5em 0.4em 1.2em 0.4em;
+}
+
+.home-buttons__button:hover,
+.select-category-list__item:hover,
+.start-quiz-confirmation__button:hover,
+.settings__submit-container input[type=submit]:hover {
+	background-color: lightGray;
+	transform: translate(0.1rem, 0.05rem);
+	box-shadow: 0.5rem 0.45rem 0.35rem gray;
+	fill: black;
+}
+.home-buttons__button:active,
+.select-category-list__item:active,
+.start-quiz-confirmation__button:active,
+.settings__submit-container input[type=submit]:active {
+	color: $color-accent;
+	background-color: gray;
+	transform: translate(0.3rem, 0.25rem);
+	box-shadow: 0.3rem 0.25rem 0.2rem gray;
+	fill: $color-accent;
+}
+
+/********* Footer *********/
+.screen__footer {
+	z-index: 1;
+	display: block;
+	position: fixed;
+	width: 6.5rem; height: 8rem;
+	bottom: 0em;
+	left: 0em;
+	border-radius: 0 3rem 0 0;
+	text-align: center;
+	background-color: $color-accent-light;
+	cursor: default;
+}
+
+.quiz-info-bar__user {
+	display: block;
+	margin: auto;
+	padding-top: 1.3rem;
+	font-family: $font-body;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	color: $color-base;
+}
+
+.quiz-info-bar__progress {
+	font-weight: bold;
+}
+
+.icon-button.left.solution {
+	position: fixed;
+	display: absolute;
+	z-index: 1;
+	width: 3rem;
+	height: 3rem;
+	bottom: 0rem; right: 0rem;
+	transform: translate(-180%, -45%);
+	margin: auto;
+}
+.icon-button.left.solution svg {
+	width: 1.9rem;
+	height: 1.9rem;
+	padding-top: 0.55rem;
+	padding-left: 0.15rem;
+}
+
+.icon-button.right.next {
+	position: fixed;
+	display: absolute;
+	z-index: 1.5;
+	width: 4.9rem;
+	height: 4.9rem;
+	bottom: 0rem; right: 0rem;
+	transform: translate(-45%, -55%);
+	margin: auto;
+}
+.icon-button.right.next svg {
+	width: 3.1rem;
+	height: 3.1rem;
+	padding-top: 0.85rem;
+	padding-left: 0.45rem;
+}
+
+.icon-button.next:active {
+	background-color: $color-correct;
+	fill: white;
+}

@@ -1,0 +1,53 @@
+@import 'flat-circles__globals';
+
+.quiz-response-list {
+	display: table;
+	position: relative;
+	margin: auto;
+	border-collapse: collapse;
+	font-family: $font-body;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.quiz-response-list__item {
+	display: table-row;
+	background-color: transparent;
+	transition:	background-color 0.4s ease;
+}
+.quiz-response-list__item:nth-child(odd) {
+	background-color: lightGray;
+}
+.quiz-response-list__item:hover {
+	background-color: $color-base-light;
+}
+
+.quiz-response-list__item__prompt {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 0.5em;
+}
+
+.quiz-response-list__item__prompt .katex {
+	letter-spacing: -0.08em;
+}
+
+.quiz-response-list__item__correctness {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 1.5em;
+	padding-right: 0.5em;
+	height: 2.5em;
+}
+.quiz-response-list__item__correctness svg {
+	width: 1.2em;
+	height: 1.2em;
+	top: 0em;
+}
+
+.quiz-response-list__item__correctness--correct {
+	fill: $color-correct;
+}
+.quiz-response-list__item__correctness--incorrect {
+	fill: $color-incorrect;
+}

@@ -11,26 +11,22 @@
   <!-- Required by Cordova's Whitelist Plugin, Enable all requests, inline styles, and eval() -->
   <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <!-- TODO: this needs to be saved locally. Only here for development. Investigating the ideal way to include external css dependencies. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.2.0/katex.min.css">
-
-
-
-  <style type="text/css"></style>
 </head>
 
 <body>
   <div class="screen">
     <div class="screen__header">
       <div class="nav-bar">
-        <span> </span>
-        <button class="icon-button left">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#previous"></use>
-          </svg>
-        </button>
+	    <a href="home.html">
+          <div class="icon-button left">
+            <svg class="icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/icons.svg#previous"></use>
+            </svg>
+          </div>
+		</a>
         <div class="nav-bar__title">Settings</div>
       </div>
     </div>
