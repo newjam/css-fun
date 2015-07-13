@@ -9,9 +9,31 @@ body {
 	background-color: black;
 }
 
+.nav-bar .icon-button.left svg {
+	display: none;
+}
+.nav-bar .icon-button.left {
+	display: block;
+	position: absolute;
+	width: 5rem; height: 15rem;
+	
+	background-image: url("images/aqua-demo/button-info.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: padding-content;
+}
+.nav-bar .icon-button.left:hover {
+	background-image: url("images/aqua-demo/button-info-hover.png");
+}
+.nav-bar .icon-button.left:active {
+	background-image: url("images/aqua-demo/button-info-active.png");
+}
+
 .home-buttons {
 	display: table;
 	margin: auto;
+	margin-top: 10em;
 	border-collapse: collapse;
 	
 	&__button-container {
@@ -76,37 +98,7 @@ body {
 	background-image: url("images/aqua-demo/button-red-active.png");
 }
 
-/*.home-buttons__button {
-	display: table-cell;
-	padding: 0.3em 0.2em 0.3em 0.2em;
-	border-radius: 10em/10em;
-	color: $color-base-dark;
-	background-color: transparent;
-	cursor: pointer;
-	transform: translate(0,0);
-	
-	font-family: $font-body;
-	font-size: 2.4em;
-	font-weight: normal;
-	text-align: center;
-	color: $color-base-dark;
-	background-color: transparent;
-	fill: black;
-	cursor: pointer;
-	
-	transition:	color 0.4s ease,
-				background-color 0.4s ease,
-				transform 0.2s ease,
-				box-shadow 0.2s ease,
-				fill 0.4s ease;
-}*/
-
 
 .home-buttons__button__icon svg {
 	display: none;
-	width: 1em; height: 1em;
 }
-
-/* .home-buttons__button__text {
-	padding: 0em 0.8em 0em 0.8em;
-} */

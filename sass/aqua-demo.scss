@@ -10,34 +10,37 @@
 	display: block;
 	position: fixed;
 	width: 100vw;
+	height: 10rem;
 	top: 0;
 	margin: auto;
+	
+	background-image: url("images/aqua-demo/header-panel.png");
+	background-position: center -5.4rem;
+	background-repeat: no-repeat;
+	background-size: auto 15rem;
+	
 	cursor: default;
 	z-index: 2;
 }
 
 .nav-bar__title {
+	background-image: url("images/aqua-demo/logo-text.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	
 	text-align: center;
 	display: block;
 	position: fixed;
-	width: 60rem; height: 60rem;
+	width: 60rem; height: 10rem;
 	margin: auto;
-	margin-left: calc(50% - 30rem);
-	margin-top: -55.8rem;
-	transform: translate(5%, 0);
-	line-height: 115.2rem;
-	border-radius: 50%;
-	background-color: $color-base;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
 	
 	font-family: $font-body;
-	font-size: 3rem;
-	font-weight: bold;
-	letter-spacing: 0.04rem;
-	word-spacing: -0.16rem;
-	color: white;
+	color: transparent;
 }
 
-.icon-button {
+/* .icon-button {
 	display: block;
 	position: fixed;
 	width: 3.4rem; height: 3.4rem;
@@ -58,9 +61,9 @@
 .icon-button svg {
 	width: 2.2em;
 	height: 2.2em;
-}
+} */
 
-.nav-bar .icon-button.left,
+/* .nav-bar .icon-button.left,
 .icon-button.left.home {
 	z-index: 3;
 	width: 5.2rem;
@@ -75,7 +78,7 @@
 	height: 2.4rem;
 	padding-top: 2rem;
 	padding-left: 1.6rem;
-}
+} */
 
 .icon-button.right.delete {
 	z-index: 3;
@@ -92,7 +95,7 @@
 	padding-left: 0.5rem;
 }
 
-.icon-button:hover {
+/* .icon-button:hover {
 	background-color: $color-accent-dark;
 	transform: translate(0.05rem 0.05rem);
 	box-shadow: 0.25rem 0.2rem 0.15rem gray;
@@ -103,7 +106,7 @@
 	transform: translate(0.15rem 0.125rem);
 	box-shadow: 0.15rem 0.125rem 0.1rem gray;
 	fill: white;
-}
+} */
 
 .icon-button.delete:active {
 	background-color: $color-incorrect;
@@ -119,26 +122,6 @@ a {
 .screen__content {
 	margin: 4.5em 0.4em 1.2em 0.4em;
 }
-
-/* .home-buttons__button:hover,
-.select-category-list__item:hover,
-.start-quiz-confirmation__button:hover,
-.settings__submit-container input[type=submit]:hover {
-	background-color: lightGray;
-	transform: translate(0.1rem, 0.05rem);
-	box-shadow: 0.5rem 0.45rem 0.35rem gray;
-	fill: black;
-}
-.home-buttons__button:active,
-.select-category-list__item:active,
-.start-quiz-confirmation__button:active,
-.settings__submit-container input[type=submit]:active {
-	color: $color-accent;
-	background-color: gray;
-	transform: translate(0.3rem, 0.25rem);
-	box-shadow: 0.3rem 0.25rem 0.2rem gray;
-	fill: $color-accent;
-} */
 
 /********* Footer *********/
 .screen__footer {
